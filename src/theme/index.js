@@ -1,5 +1,13 @@
 import { typographyVariants } from './typographyVariants';
 
+export const breakpoints = {
+  xs: 0,
+  sm: 480,
+  md: 768,
+  lg: 992,
+  xl: 1200,
+};
+
 export const colors = {
   background: {
     light: {
@@ -47,4 +55,5 @@ export default {
   transition: '200ms ease-in-out',
   fontFamily: '\'Rubik\', sans-serif',
   typographyVariants,
+  breakpoints,
 };
