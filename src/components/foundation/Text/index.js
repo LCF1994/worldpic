@@ -3,11 +3,13 @@ import styled, { css } from 'styled-components';
 import get from 'lodash/get';
 import PropTypes from 'prop-types';
 import { typographyVariants } from '../../../theme/typographyVariants';
+import { propToStyle } from '../../../theme/utils/propToStyle';
 
 
 const TextBase = styled.span`
-  ${({ variant }) => get(typographyVariants, variant)}
+  ${({ variant }) => get(typographyVariants, variant)};
   color: ${({ theme, color }) => get(theme, `colors.${color}.color`)};
+  ${propToStyle('textAlign')};
 `;
 
 export function Text({
