@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
+import { typographyVariants } from '../../../../theme/typographyVariants';
 import { breakpointsMedia } from '../../../../theme/utils/breakpointsMedia';
-import { TextStyleVariants } from '../../../foundation/Text/styles/TextStyleVariants';
 
 export const MenuWrapper = styled.nav`
   font-family: 'Rubik', sans-serif;
@@ -80,14 +80,14 @@ MenuWrapper.CentralSide = styled.div`
     text-decoration: none;
     color: #88989E;
     transition: 200ms ease-in-out;
-    /* ${breakpointsMedia({
+    ${breakpointsMedia({
     xs: css`
-        ${TextStyleVariants.smallestException}
+        ${typographyVariants.smallestException}
     `,
     md: css`
-      ${TextStyleVariants.paragraph1}
+      ${typographyVariants.paragraph1}
     `,
-  })} */
+  })} 
     &:hover,
     &:focus {
       font-weight: 500;
@@ -104,9 +104,9 @@ MenuWrapper.RightSide = styled.div`
   flex: 1;
   order: 2;
   justify-content: flex-end;
-  /* ${breakpointsMedia({
+  ${breakpointsMedia({
     md: css`
       order: initial;
     `,
-  })} */
+  })}
 `;

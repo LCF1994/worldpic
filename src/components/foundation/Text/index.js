@@ -2,11 +2,11 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import get from 'lodash/get';
 import PropTypes from 'prop-types';
-import { TextStyleVariants } from './styles/TextStyleVariants';
+import { typographyVariants } from '../../../theme/typographyVariants';
 
 
 const TextBase = styled.span`
-  ${({ variant }) => TextStyleVariants[variant]}
+  ${({ variant }) => get(typographyVariants, variant)}
   color: ${({ theme, color }) => get(theme, `colors.${color}.color`)};
 `;
 
