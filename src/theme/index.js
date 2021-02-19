@@ -51,9 +51,9 @@ export const colors = {
 
 export default {
   colors,
-  borderRadius: '12px',
+  breakpoints,
+  typographyVariants,
+  borderRadius: '8px',
   transition: '200ms ease-in-out',
   fontFamily: '\'Rubik\', sans-serif',
-  typographyVariants,
-  breakpoints,
 };
